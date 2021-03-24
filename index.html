@@ -1,4 +1,88 @@
-!--Section dedicated towards the About Section-->
+
+---
+layout: default
+title: Robotics @ Maryland Home
+tagname: landing
+currenttab: home-tab
+description: Check out Robotics @ Maryland!
+jquery: false
+---
+<section id="anouncement" class="hero is-warning is-hidden">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 id="anouncement-title" class="title is-spaced upper">
+                anouncement
+            </h1>
+            <h2 id="anouncement-details" class="subtitle">
+                Follow the steps below and you'll be a member of Robotics @ Maryland in no time!
+            </h2>
+        </div>
+    </div>
+</section>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us4.list-manage.com","uuid":"5990539094793ae85791b9268","lid":"d16215c576","uniqueMethods":true}) })</script>
+<script type='text/javascript'>
+ var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1TFB8Sb-NEyFBz-o-wpk0ebERaPL_IiVMZ0nsc3YPuG8/edit?usp=sharing';
+
+ function init() {
+     Tabletop.init( { key: publicSpreadsheetUrl,
+                      callback: showInfo,
+                      simpleSheet: true } )
+ }
+
+ function showInfo(data, tabletop) {
+     if(data[0].title != ""){
+         document.getElementById("anouncement-title").innerHTML = data[0].title;
+         document.getElementById("anouncement-details").innerHTML = data[0].details;
+         document.getElementById("anouncement").classList = "hero is-warning";
+     }
+ }
+
+ window.addEventListener('DOMContentLoaded', init)
+</script>
+<div id="club-section">
+        <section id="club-join-sponsor" class="hero is-dark is-bold is-fullheight">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <img class="is-hidden-touch" src="./assets/logo.png" alt="Logo">
+                    <img class="is-hidden-desktop" src="./assets/small_logo.png" alt="Logo">
+                    <h1 class="title is-1 is-spaced upper">
+                        Robotics
+                        <br class="is-hidden-tablet"/>
+                        At
+                        <br class="is-hidden-tablet"/>
+                        Maryland
+                    </h1>
+                    <a class="button is-large is-primary upper" href="#joinus">
+                        Join Us
+                    </a>
+                    <a class="button is-large is-primary is-inverted upper" href="./html/sponsors_page.html">
+                        Sponsor
+                    </a>
+                    <p><br/></p>
+		    <div class="row">
+		      <div class="column outer"></div>
+		      <div class="column center">
+			<h3 class="subtitle is-3 is-spaced">
+                          Neutral Buoyancy Research Lab
+                          <br/>
+                          Top Floor
+                          <br/>
+                          Tuesdays: 6:30PM - 8:00PM
+			  <br/>
+		          Thursdays: 7:00PM - 8:30PM
+			  <br/>
+			  Saturdays: 12:00PM - 4:00PM
+			</h3>
+		      </div>
+		      <div class="column outer"></div>
+		    </div>
+                </div>
+            </div>
+        </section>
+</div>
+
+<!--Section dedicated towards the About Section-->
 <section id="about" class="hero is-light">
 
     <div class="hero-head">
@@ -53,6 +137,71 @@
                     <a class="twitter-timeline" data-height="1050" data-theme="dark" href="https://twitter.com/projectqubo">Tweets by projectqubo</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<!--Section dedicated towards the Team Section-->
+<section id="team" class="hero is-dark">
+
+    <div class="hero-head">
+        <div class="container has-text-centered">
+            <p class="title is-1 upper">
+                Meet the Team
+            </p>
+        </div>
+    </div>
+
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <div class="columns is-multiline is-desktop">
+                <div class="column is-3 team-member">
+                    <h3 class="title is-3 upper is-spaced">Nathaniel Renegar</h1>
+                    <h5 class="subtitle is-5">President, Software Lead</h1>
+                </div>
+                <div class="column is-3 team-member">
+                    <h3 class="title is-3 upper is-spaced">James Cobau</h1>
+                    <h5 class="subtitle is-5">Vice President, Mechanical Lead</h1>
+                </div>
+                <div class="column is-3 team-member">
+                    <h3 class="title is-3 upper is-spaced">Ian Pfeffer</h1>
+                    <h5 class="subtitle is-5">Treasurer</h1>
+                </div>
+                <div class="column is-3 team-member">
+                    <h3 class="title is-3 upper is-spaced">Rainier Hood</h1>
+                    <h5 class="subtitle is-5">Electrical Lead</h1>
+                </div>
+            </div>
+            <figure class="team-photo box">
+                <img src="./assets/ram_team.jpeg">
+            </figure>
+        </div>
+    </div>
+
+</section>
+
+<!--Section dedicated towards Our Sponsors-->
+<section id="sponsors" class="hero is-light">
+    <div class="hero-head desktop-width-limited">
+        <div class="container has-text-centered">
+            <p class="title is-1 upper is-spaced">
+                Thank you
+                <br class="is-hidden-tablet"/>
+                to our
+                <br class="is-hidden-tablet"/>
+                Sponsors
+            </p>
+        </div>
+    </div>
+        <div class="hero-body desktop-width-limited">
+        <div class="container has-text-centered">
+            <p class="subtitle is-3">
+                Our team, for all its accomplishments, could not compete without the generous support of our sponsors.
+            </p>
+            <a class="subtitle is-3 is-spaced" href="./html/sponsors_page.html">
+                Learn how you can become a sponsor today.
+            </a>
+            <img src="./assets/sponsors.png" alt="Our Past Sponsors">
         </div>
     </div>
 </section>
