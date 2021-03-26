@@ -1,0 +1,48 @@
+<!--
+Note that this is the same Navigation Bar across all html pages.
+This is loaded into the <nav></nav> on each html page requiring a navigation bar.
+-->
+
+<!--On the top left hand side is the CyberEdu logo-->
+<div class="nav-left">
+    <a id="ram-home-logo" href="{{site.baseurl}}/index.html" class="nav-item is-tab is-active upper">
+        <img src="{{site.baseurl}}/assets/logo.png" alt="Robotics @ Maryland logo"/>
+        &nbsp; Robotics at Maryland 
+    </a>
+</div>
+
+<div id="nav-menu" class="nav-right nav-menu">
+    <a id="home-tab" href="{{site.baseurl}}/index.html" class="nav-item is-tab">Home</a>
+    <a id="sponsors-tab" href="{{site.baseurl}}/html/sponsors_page.html" class="nav-item is-tab">Sponsor</a>
+    <a id="robots-tab" href="{{site.baseurl}}/html/robots_page.html" class="nav-item is-tab">Robots</a>
+    <a id="resources-tab" href="{{site.baseurl}}/html/resources_page.html" class="nav-item is-tab">Resources</a>
+    <a id="blogs-tab" href="{{site.baseurl}}/html/blogs.html" class="nav-item is-tab">Blogs</a>
+    <a id="mailing-tab" href="{{site.baseurl}}/html/mailing_page.html" class="nav-item is-tab">Mailing</a>
+</div>
+
+<span id="nav-toggle" class="nav-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+</span>
+
+<!--For toggling nav menu on mobile-->
+<script>
+    var menuToggled= false;
+    var navtoggle = document.getElementById('nav-toggle');
+    var navmenu = document.getElementById('nav-menu');
+
+    navtoggle.onclick = function(){
+
+        if(menuToggled){
+            navtoggle.className = "nav-toggle";
+            navmenu.className = "nav-right nav-menu";
+        }else{
+            navtoggle.className += " is-active";
+            navmenu.className += " is-active";
+        }
+
+        menuToggled= !menuToggled;
+
+    }
+</script>

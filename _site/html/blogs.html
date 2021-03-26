@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"> 
+    <title>Qubo from R@M</title>
+
+    <!--Linking the css file (generated using sass and Bulma)-->
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
+    
+    <!--Colors the URL bar in Chrome on mobile only-->
+    <meta name="theme-color" content="#EF4836" />
+    <!--To control layout on mobile browsers-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Read our blogs at R@M" />
+    <!--Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:500|Open+Sans">
+
+    
+
+    <!--Font awesome icons loaded before </body> tag-->
+
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <nav class="nav has-shadow">
+        <!--
+Note that this is the same Navigation Bar across all html pages.
+This is loaded into the <nav></nav> on each html page requiring a navigation bar.
+-->
+
+<!--On the top left hand side is the CyberEdu logo-->
+<div class="nav-left">
+    <a id="ram-home-logo" href="/index.html" class="nav-item is-tab is-active upper">
+        <img src="/assets/logo.png" alt="Robotics @ Maryland logo"/>
+        &nbsp; Robotics at Maryland 
+    </a>
+</div>
+
+<div id="nav-menu" class="nav-right nav-menu">
+    <a id="home-tab" href="/index.html" class="nav-item is-tab">Home</a>
+    <a id="sponsors-tab" href="/html/sponsors_page.html" class="nav-item is-tab">Sponsor</a>
+    <a id="robots-tab" href="/html/robots_page.html" class="nav-item is-tab">Robots</a>
+    <a id="resources-tab" href="/html/resources_page.html" class="nav-item is-tab">Resources</a>
+    <a id="blogs-tab" href="/html/blogs.html" class="nav-item is-tab">Blogs</a>
+    <a id="mailing-tab" href="/html/mailing_page.html" class="nav-item is-tab">Mailing</a>
+</div>
+
+<span id="nav-toggle" class="nav-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+</span>
+
+<!--For toggling nav menu on mobile-->
+<script>
+    var menuToggled= false;
+    var navtoggle = document.getElementById('nav-toggle');
+    var navmenu = document.getElementById('nav-menu');
+
+    navtoggle.onclick = function(){
+
+        if(menuToggled){
+            navtoggle.className = "nav-toggle";
+            navmenu.className = "nav-right nav-menu";
+        }else{
+            navtoggle.className += " is-active";
+            navmenu.className += " is-active";
+        }
+
+        menuToggled= !menuToggled;
+
+    }
+</script>
+
+    </nav>
+    <script>
+        document.getElementById('blogs-tab').classList += " is-active";                
+    </script>
+
+    <!--This is for everything inside the Landing Page, excluding the navbar & footer-->
+    <div id="qubo-page">
+
+        <section class="hero is-light">
+    <div class="hero-body desktop-width-limited">
+        <div class="container">
+            <div class="content is-medium">
+                <h1>Recent Blogs</h1>
+                <section class="blog-list">
+                    
+                    <h3><a href="/2017/08/28/robosub-2017.html">RoboSub 2017</a></h3>
+                    <h6>Aug 28, 2017</h6>
+                    <p><p><img src="/assets/posts/robosub2017.jpg" alt="(Picture of team working on Qubo)" /></p>
+
+<p>After spending a few years in design, Robotics @ Maryland’s new robot, Qubo, made it to competition! With the robot and all our gear packed up, the team flew out to San Diego, California, to compete in the 20th annual RoboSub competition.</p>
+
+ <a href="/2017/08/28/robosub-2017.html">Read More</a></p>
+                    <hr>
+                    
+                    <h3><a href="/2016/10/11/new-cameras.html">New Cameras for Our Builds</a></h3>
+                    <h6>Oct 11, 2016</h6>
+                    <p><p>R@M has exciting news! We will be adding HD video to our build process for our members to watch.</p>
+
+<p>We chose to source a couple of these <a href="https://www.cctvcameraworld.com/security-cameras.html">security cameras</a> as small lightweight cameras have many uses beyond surveillance. With the camera we have selected, we will be able to document our design and building process via high quality live RTSP video streams captured to our computer and blog posts. Sponsors, members, and robotics fans the world over will be able to follow our progress in creating our latest robot. We will link the streams and photos on our website. We will use a dome shaped <a href="https://www.cctvcameraworld.com/security-cameras.html">ip camera found on this page</a> to optimize QUBO for low-light operation. Murky water and bad lighting in the competition pool have always proved a challenge for our team, but with the camera’s assistance we will overcome these hurdles.</p>
+
+<p>If you are a high school student, you may also want to check out these these <a href="https://www.cctvcameraworld.com/tips-for-robotics-students.html">tips for high school students interested in robotics</a>.</p>
+
+<p>-The R@M Team</p>
+ <a href="/2016/10/11/new-cameras.html">Read More</a></p>
+                    <hr>
+                    
+                </section>
+            </div>
+        </div>
+    </div>
+</section> 
+
+
+    </div>
+
+
+    <!--Footer-->
+    <div id="footer">
+        <!--Footer-->
+<section class="hero is-dark">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <p class="subtitle is-6">
+                Twitter: <a href="//twitter.com/projectqubo" target="_blank" rel="noreferrer noopener">@projectqubo</a>
+            </p>
+            <p class="subtitle is-6">
+                Contact Us: <a href="mailto:team@ram.umd.edu" target="_blank" rel="noreferrer noopener">team@ram.umd.edu</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+    </div>
+
+    <!--Load font awesome icons-->
+    <noscript id="deferred-styles">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </noscript>
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+
+
+</body>
+
+</html>

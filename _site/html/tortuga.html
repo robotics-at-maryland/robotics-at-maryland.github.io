@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"> 
+    <title>Tortuga from R@M</title>
+
+    <!--Linking the css file (generated using sass and Bulma)-->
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
+    
+    <!--Colors the URL bar in Chrome on mobile only-->
+    <meta name="theme-color" content="#EF4836" />
+    <!--To control layout on mobile browsers-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Learn more about Tortuga, a robot from R@M" />
+    <!--Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:500|Open+Sans">
+
+    
+
+    <!--Font awesome icons loaded before </body> tag-->
+
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <nav class="nav has-shadow">
+        <!--
+Note that this is the same Navigation Bar across all html pages.
+This is loaded into the <nav></nav> on each html page requiring a navigation bar.
+-->
+
+<!--On the top left hand side is the CyberEdu logo-->
+<div class="nav-left">
+    <a id="ram-home-logo" href="/index.html" class="nav-item is-tab is-active upper">
+        <img src="/assets/logo.png" alt="Robotics @ Maryland logo"/>
+        &nbsp; Robotics at Maryland 
+    </a>
+</div>
+
+<div id="nav-menu" class="nav-right nav-menu">
+    <a id="home-tab" href="/index.html" class="nav-item is-tab">Home</a>
+    <a id="sponsors-tab" href="/html/sponsors_page.html" class="nav-item is-tab">Sponsor</a>
+    <a id="robots-tab" href="/html/robots_page.html" class="nav-item is-tab">Robots</a>
+    <a id="resources-tab" href="/html/resources_page.html" class="nav-item is-tab">Resources</a>
+    <a id="blogs-tab" href="/html/blogs.html" class="nav-item is-tab">Blogs</a>
+    <a id="mailing-tab" href="/html/mailing_page.html" class="nav-item is-tab">Mailing</a>
+</div>
+
+<span id="nav-toggle" class="nav-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+</span>
+
+<!--For toggling nav menu on mobile-->
+<script>
+    var menuToggled= false;
+    var navtoggle = document.getElementById('nav-toggle');
+    var navmenu = document.getElementById('nav-menu');
+
+    navtoggle.onclick = function(){
+
+        if(menuToggled){
+            navtoggle.className = "nav-toggle";
+            navmenu.className = "nav-right nav-menu";
+        }else{
+            navtoggle.className += " is-active";
+            navmenu.className += " is-active";
+        }
+
+        menuToggled= !menuToggled;
+
+    }
+</script>
+
+    </nav>
+    <script>
+        document.getElementById('robots-tab').classList += " is-active";                
+    </script>
+
+    <!--This is for everything inside the Landing Page, excluding the navbar & footer-->
+    <div id="tortuga-page">
+
+        <section class="hero is-light">
+    <div class="hero-body desktop-width-limited">
+        <div class="container">
+            <div class="content is-medium">
+                <h1 class="subtitle is-1">Meet Tortuga</h1>
+                <hr>
+                <!--Image and link for mobile-->
+                <figure class="image is-4by3">
+                    <img id="tortuga_image">
+                </figure>
+                <h3><a href="../assets/qubo-tortoise-lived.pdf">Download the paper for more in-depth information about Tortuga.</a></h3>
+            </div>
+        </div>
+        </div>
+    </div>
+</section> 
+
+
+    </div>
+
+
+    <!--Footer-->
+    <div id="footer">
+        <!--Footer-->
+<section class="hero is-dark">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <p class="subtitle is-6">
+                Twitter: <a href="//twitter.com/projectqubo" target="_blank" rel="noreferrer noopener">@projectqubo</a>
+            </p>
+            <p class="subtitle is-6">
+                Contact Us: <a href="mailto:team@ram.umd.edu" target="_blank" rel="noreferrer noopener">team@ram.umd.edu</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+    </div>
+
+    <!--Load font awesome icons-->
+    <noscript id="deferred-styles">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </noscript>
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+
+
+</body>
+
+</html>

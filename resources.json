@@ -1,0 +1,18 @@
+{
+    "resources":[
+        {
+            "title": "Lorem Ipsum",
+            "link": "//www.google.com/",
+            "author": "Argh Argh Argh",
+            "description": [
+                "Each resource can have a title, author, description, and list of categories."
+            ],
+            "categories": [
+                {"category": "Mechanical"},
+                {"category": "Software"},
+                {"category": "New Members"},
+                {"category": "Bueno"}
+            ]
+        }
+    ]
+}

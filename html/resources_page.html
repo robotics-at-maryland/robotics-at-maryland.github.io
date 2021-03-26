@@ -1,0 +1,106 @@
+---
+layout: default
+title: Join Robotics @ Maryland
+tagname: resources
+currenttab: resources-tab
+description: List of resources we use at R@M
+jquery: true
+extras_in_head: <script defer type="text/javascript" src="/js/resources_page.min.js"></script>
+---
+
+<!--Banner at Top-->
+<section class="hero is-dark">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="title is-1 is-spaced upper">
+                Helpful Resources
+            </h1>
+            <h2 class="subtitle">
+                What the Robotics At Maryland's subteams use in their work.
+            </h2>
+        </div>
+    </div>
+</section>
+
+<!--
+The "section" fixes the horizontal padding that occurs on mobile/tablet.
+Note that this also adds padding.
+-->
+<div class="section">
+
+    <!--categories on the left and cards on the right-->
+    <div class="columns">
+
+        <!--Categories-->
+        <div id="categories" class="column is-narrow">
+                <aside class="menu">
+                    <p class="menu-label">
+                        Resources
+                    </p>
+                    <ul class="menu-list">
+                        <li><a class="category-link is-active">All</a></li>
+                        <li><a class="category-link">Mechanical</a>
+                            <ul>
+                                <li><a class="category-link">Design</a></li>
+                                <li><a class="category-link">Services</a></li>
+                                <li><a class="category-link">Vendor</a></li>
+                            </ul>
+                        </li>
+                        <!---
+                        <li><a class="category-link">Electronics</a></li>
+                        <li><a class="category-link">Software</a></li>
+                        <li><a class="category-link">Controls</a></li>
+                        -->
+                        <li><a class="category-link">New Members</a>
+                            <!--
+                            <ul>
+                                <li><a class="category-link">Getting Started</a></li>
+                                <li><a class="category-link">Additional Resources</a></li>
+                            </ul>
+                            -->
+                        </li>
+                        <li><a class="category-link">Software</a></li>
+                    </ul>
+                </aside>
+        </div>
+
+        <!--Resource Cards-->
+        <div id="resource-cards" class="column">
+            <!--Resource Cards-->
+            {% for resource in site.data.resources %}
+            <div class="resource-card">
+                <div class="box">
+                    <div class="content">
+                        <h3 class="title is-3 is-spaced">
+                            {% if resource.link %}
+                            <a href="{{resource.link}}" target="_blank" rel="noreferrer noopener"><!--Link to resource-->
+                                <!--Title of Resource-->
+                                {{resource.title}}
+                            </a>
+                            {% else %}
+                            {{resource.title}}
+                            {% endif %}
+                        </h3>
+                        <p class="subtitle is-spaced">
+                            <!--From whom its from-->
+                            {{resource.description}}
+                        </p>
+                        <div id="category-tags">
+                            <!--Place category tags here-->
+                            {% for category in resource.categories %}
+                            <span class="tag is-dark is-medium">
+                                {{category}}
+                            </span>
+                            {%endfor%}
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</div>
+
+  

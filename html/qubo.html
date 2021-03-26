@@ -1,0 +1,85 @@
+---
+layout: default
+title: Qubo from R@M
+tagname: qubo
+currenttab: robots-tab
+description: Learn more about Qubo, a robot from R@M
+jquery: false
+---
+
+<section class="hero is-light">
+    <div class="hero-body desktop-width-limited">
+        <div class="container">
+            <div class="content is-medium">
+                <h1 class="subtitle is-1">Meet Qubo</h1>
+                <hr>
+                <!--Larger size for tablet & desktop-->
+                <iframe src="https://myhub.autodesk360.com/ue29cff33/shares/public/SHabee1QT1a327cf2b7a0c9f794f25c5a13f?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+                
+                <!--Image and link for mobile-->
+                <figure class="image is-4by3 is-hidden-tablet">
+                    <img id="qubo_mobile_image">
+                </figure>
+                <br class="is-hidden-tablet"/>
+                <a class="is-hidden-tablet upper" href="http://a360.co/2gVA6hO" target="_blank" rel="noreferrer noopener">View 3D Model
+                    <div class="icon">
+                        <i class="fa fa-external-link"></i>
+                    </div>
+                </a>
+                <h1>Understanding Qubo</h1>
+                <hr>
+                <p>
+                    As Tortuga hardware ages and the software becomes outdated, we have decided to create a new robotics platform. Qubo is designed to be modular, allowing plug-and-play of new components, new capabilities. The platform incorporates latest computation hardware and enables robotics autonomy research for years to come.
+                </p>
+                <h3>Batteries</h3>
+                <p>
+                    Batteries integrated in main electronic hull requires frequent opening of hull for charging, thus increase the chance of o-ring seal damage. In Qubo, two external hot-swappable batteries will supply power to the electronics system. Each will be housed in its own pressure hull with its own monitoring circuit and switch. When one drains, another can be plugged in without loss of power.
+                </p>
+                <h3>Camera</h3>
+                <p>
+                    We are using two Mako IP camera for vision. One pointing forward and one downward. We are currently experimenting with a smaller camera hull.
+                </p>
+                <h3>Electronic Hull</h3>
+                <p>
+                    Electronic hull is capable of housing all of the electronic and control hardware, including a Nvidia Jetson TX1 as our main computer. On one side, the CPU endcap dissipates heats generated from the Jetson while allows underwater electrical connectors (Subconn) to be mounted. On the other side, the connector endcap is a heatsink for thruster speed controllers (ESC) and their corresponding penetrators. A rail system in the middle carries the backplane and the daughterboards. In the future, we wish to redesign the hull interior mounting system to accommodate a zero-insertion-force-connector (Hypertonic).
+                </p>
+                <h3>Depth Sensor</h3>
+                <p>
+                    The two instruments helps us track our movement and control our robot. IMU tracks acceleration, orientation, and magnetic direction, DVL measures the exact velocity of vehicle, depth sensor detects the depth of vehicle. 
+                </p>
+                <h3>Thruster</h3>
+                <p>
+                    We use 8 Blue Robotics T200 thruster to give us all six degree of freedom with redundancy.
+                </p>
+                <h3>Pneumatic System</h3>
+                <p>
+                    A pneumatic system allows us to perform underwater tasks without the help of specially insulated electric motors. We use 12g canister of compressed CO2 as source for pneumatic power. A series of manifolds distributes the high-pressure air to various pneumatic cylinders that drive mechanisms.
+                </p>
+                <h3>Frame</h3>
+                <p>
+                    Frame holds all the component in its optimum configuration, so it’s usually the last piece to be finalized. With out modular frame, the interface points are predefined and machined before any other components. The side panels water-jetted out of aluminum sheets and they are held together with 8 corner brackets, 4 main structs, and reinforcement bars. 
+                </p>
+                <h1>What we're doing with Qubo</h1>
+                <hr>
+                <h3>1. Mechanical design of electronic hull sliding, seal, and locking mechanism</h3>
+                <p>
+                    We want to revamp the interior to accommodate for the new board design and to shorten the time and effort needed to open or close the electronic hull.
+                </p>
+                <h3>2. Multi-purpose manipulator arm</h3>
+                <ul>
+                    <li>Explore underwater servo / stepper to create a 6 DOF robotics arm</li>
+                    <li>Robotics arm control algorithm development</li>
+                    <li>Integrated torpedo and marker dropper marker launcher development and testing</li>
+                    <li>Create pressure hull to house front and downward facing cameras</li>
+                    <li>Effective gripper for tubular objects</li>
+                </ul>
+                <h3>3. Sonar Sensing</h3>
+                <p>
+                    We need to develop a sonar array and the corresponding signal processing boards to calculate the direction vector of a sonar pinger for a particular frequency.
+                </p>
+                <h3><a href="../assets/qubo-tortoise-lived.pdf">Download the paper for more in-depth information about Qubo.</a></h3>
+            </div>
+        </div>
+        </div>
+    </div>
+</section> 

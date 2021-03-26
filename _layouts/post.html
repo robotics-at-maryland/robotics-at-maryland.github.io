@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"> 
+    <title>{{page.title}}</title>
+
+    <!--Linking the css file (generated using sass and Bulma)-->
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/styles.css" />
+    <!--Colors the URL bar in Chrome on mobile only-->
+    <meta name="theme-color" content="#EF4836" />
+    <!--To control layout on mobile browsers-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{page.description}}" />
+    <!--Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:500|Open+Sans">
+
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <nav class="nav has-shadow">
+        {% include navbar.html %}
+    </nav>
+    <script>
+        document.getElementById('{{page.currenttab}}').classList += " is-active";                
+    </script>
+
+    <!--This is for everything inside the post, excluding the navbar & footer-->
+    <section class="hero is-light post">
+        <div class="hero-body desktop-width-limited">
+            <div class="container">
+                <div class="content is-medium">
+                    <h1>{{page.title}}</h1>
+                    {{content}}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <div id="footer">
+        {% include footer.html %}
+    </div>
+
+</body>
+
+</html>

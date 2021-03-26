@@ -1,0 +1,7 @@
+exclude:
+    ['mustaches/', 'README.md', 'resources.json', 'Dockerfile']
+
+sass:
+    style: compressed
+
+date_format: "%b %-d, %Y"

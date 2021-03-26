@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"> 
+    <title>Join Robotics @ Maryland</title>
+
+    <!--Linking the css file (generated using sass and Bulma)-->
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <!--Colors the URL bar in Chrome on mobile only-->
+    <meta name="theme-color" content="#EF4836" />
+    <!--To control layout on mobile browsers-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="List of resources we use at R@M" />
+    <!--Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:500|Open+Sans">
+
+    
+        <script defer type="text/javascript" src="/js/resources_page.min.js"></script>
+    
+
+    <!--Font awesome icons loaded before </body> tag-->
+
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <nav class="nav has-shadow">
+        <!--
+Note that this is the same Navigation Bar across all html pages.
+This is loaded into the <nav></nav> on each html page requiring a navigation bar.
+-->
+
+<!--On the top left hand side is the CyberEdu logo-->
+<div class="nav-left">
+    <a id="ram-home-logo" href="/index.html" class="nav-item is-tab is-active upper">
+        <img src="/assets/logo.png" alt="Robotics @ Maryland logo"/>
+        &nbsp; Robotics at Maryland 
+    </a>
+</div>
+
+<div id="nav-menu" class="nav-right nav-menu">
+    <a id="home-tab" href="/index.html" class="nav-item is-tab">Home</a>
+    <a id="sponsors-tab" href="/html/sponsors_page.html" class="nav-item is-tab">Sponsor</a>
+    <a id="robots-tab" href="/html/robots_page.html" class="nav-item is-tab">Robots</a>
+    <a id="resources-tab" href="/html/resources_page.html" class="nav-item is-tab">Resources</a>
+    <a id="blogs-tab" href="/html/blogs.html" class="nav-item is-tab">Blogs</a>
+    <a id="mailing-tab" href="/html/mailing_page.html" class="nav-item is-tab">Mailing</a>
+</div>
+
+<span id="nav-toggle" class="nav-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+</span>
+
+<!--For toggling nav menu on mobile-->
+<script>
+    var menuToggled= false;
+    var navtoggle = document.getElementById('nav-toggle');
+    var navmenu = document.getElementById('nav-menu');
+
+    navtoggle.onclick = function(){
+
+        if(menuToggled){
+            navtoggle.className = "nav-toggle";
+            navmenu.className = "nav-right nav-menu";
+        }else{
+            navtoggle.className += " is-active";
+            navmenu.className += " is-active";
+        }
+
+        menuToggled= !menuToggled;
+
+    }
+</script>
+
+    </nav>
+    <script>
+        document.getElementById('resources-tab').classList += " is-active";                
+    </script>
+
+    <!--This is for everything inside the Landing Page, excluding the navbar & footer-->
+    <div id="resources-page">
+
+        <!--Banner at Top-->
+<section class="hero is-dark">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="title is-1 is-spaced upper">
+                Helpful Resources
+            </h1>
+            <h2 class="subtitle">
+                What the Robotics At Maryland's subteams use in their work.
+            </h2>
+        </div>
+    </div>
+</section>
+
+<!--
+The "section" fixes the horizontal padding that occurs on mobile/tablet.
+Note that this also adds padding.
+-->
+<div class="section">
+
+    <!--categories on the left and cards on the right-->
+    <div class="columns">
+
+        <!--Categories-->
+        <div id="categories" class="column is-narrow">
+                <aside class="menu">
+                    <p class="menu-label">
+                        Resources
+                    </p>
+                    <ul class="menu-list">
+                        <li><a class="category-link is-active">All</a></li>
+                        <li><a class="category-link">Mechanical</a>
+                            <ul>
+                                <li><a class="category-link">Design</a></li>
+                                <li><a class="category-link">Services</a></li>
+                                <li><a class="category-link">Vendor</a></li>
+                            </ul>
+                        </li>
+                        <!---
+                        <li><a class="category-link">Electronics</a></li>
+                        <li><a class="category-link">Software</a></li>
+                        <li><a class="category-link">Controls</a></li>
+                        -->
+                        <li><a class="category-link">New Members</a>
+                            <!--
+                            <ul>
+                                <li><a class="category-link">Getting Started</a></li>
+                                <li><a class="category-link">Additional Resources</a></li>
+                            </ul>
+                            -->
+                        </li>
+                        <li><a class="category-link">Software</a></li>
+                    </ul>
+                </aside>
+        </div>
+
+        <!--Resource Cards-->
+        <div id="resource-cards" class="column">
+            <!--Resource Cards-->
+            
+            <div class="resource-card">
+                <div class="box">
+                    <div class="content">
+                        <h3 class="title is-3 is-spaced">
+                            
+                            <a href="https://drive.google.com/file/d/0Bw5tQGz11MUuZEg0UEs0N1RFUHc/view?usp=sharing" target="_blank" rel="noreferrer noopener"><!--Link to resource-->
+                                <!--Title of Resource-->
+                                Mechanical Training Checklist
+                            </a>
+                            
+                        </h3>
+                        <p class="subtitle is-spaced">
+                            <!--From whom its from-->
+                            This checklist is for you to complete and to keep track of skills you have acquired.
+                        </p>
+                        <div id="category-tags">
+                            <!--Place category tags here-->
+                            
+                            <span class="tag is-dark is-medium">
+                                New Members
+                            </span>
+                            
+                            <span class="tag is-dark is-medium">
+                                Mechanical
+                            </span>
+                            
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-card">
+                <div class="box">
+                    <div class="content">
+                        <h3 class="title is-3 is-spaced">
+                            
+                            <a href="https://grabcad.com/workbench" target="_blank" rel="noreferrer noopener"><!--Link to resource-->
+                                <!--Title of Resource-->
+                                GrabCAD Workbench
+                            </a>
+                            
+                        </h3>
+                        <p class="subtitle is-spaced">
+                            <!--From whom its from-->
+                            GrabCAD is the product lifecycle management (PLM) software we use. We upload, store, and share CAD files here. The workbench works with all types of CAD files, allowing you the flexibility to work on the CAD program you are most familiar with.
+                        </p>
+                        <div id="category-tags">
+                            <!--Place category tags here-->
+                            
+                            <span class="tag is-dark is-medium">
+                                Mechanical
+                            </span>
+                            
+                            <span class="tag is-dark is-medium">
+                                Design
+                            </span>
+                            
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-card">
+                <div class="box">
+                    <div class="content">
+                        <h3 class="title is-3 is-spaced">
+                            
+                            <a href="https://docs.google.com/document/d/1b_oASzht77SJbULa9-KxqbgcZeAAQ97IRJ160zzNg2I/edit?usp=sharing" target="_blank" rel="noreferrer noopener"><!--Link to resource-->
+                                <!--Title of Resource-->
+                                Intro to Machining
+                            </a>
+                            
+                        </h3>
+                        <p class="subtitle is-spaced">
+                            <!--From whom its from-->
+                            This is a quick intro to machining and how to design for fabrication.
+                        </p>
+                        <div id="category-tags">
+                            <!--Place category tags here-->
+                            
+                            <span class="tag is-dark is-medium">
+                                Mechanical
+                            </span>
+                            
+                            <span class="tag is-dark is-medium">
+                                Design
+                            </span>
+                            
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-card">
+                <div class="box">
+                    <div class="content">
+                        <h3 class="title is-3 is-spaced">
+                            
+                            <a href="http://www.applerubber.com/src/pdf/seal-design-guide.pdf" target="_blank" rel="noreferrer noopener"><!--Link to resource-->
+                                <!--Title of Resource-->
+                                Apple Rubber O-Ring Guide
+                            </a>
+                            
+                        </h3>
+                        <p class="subtitle is-spaced">
+                            <!--From whom its from-->
+                            Apple rubber O-ring seal design guide is a good start in learning about several types of O-ring seals and general procedures O-ring groove design.
+                        </p>
+                        <div id="category-tags">
+                            <!--Place category tags here-->
+                            
+                            <span class="tag is-dark is-medium">
+                                Mechanical
+                            </span>
+                            
+                            <span class="tag is-dark is-medium">
+                                Design
+                            </span>
+                            
+                            <span class="tag is-dark is-medium">
+                                O-ring
+                            </span>
+                            
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-card">
+                <div class="box">
+                    <div class="content">
+                        <h3 class="title is-3 is-spaced">
+                            
+                            <a href="https://www.parker.com/literature/ORD%205700%20Parker_O-Ring_Handbook.pdf" target="_blank" rel="noreferrer noopener"><!--Link to resource-->
+                                <!--Title of Resource-->
+                                Parker Handbook
+                            </a>
+                            
+                        </h3>
+                        <p class="subtitle is-spaced">
+                            <!--From whom its from-->
+                            Parker handbook has been the go-to reference material for industrial O-ring design. It covers O-ring seal theory, how they fail, and material selection. Don’t simply take groove dimensions from their table, instead, calculate and verify them yourselves.
+                        </p>
+                        <div id="category-tags">
+                            <!--Place category tags here-->
+                            
+                            <span class="tag is-dark is-medium">
+                                Mechanical
+                            </span>
+                            
+                            <span class="tag is-dark is-medium">
+                                Design
+                            </span>
+                            
+                            <span class="tag is-dark is-medium">
+                                O-ring
+                            </span>
+                            
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-card">
+                <div class="box">
+                    <div class="content">
+                        <h3 class="title is-3 is-spaced">
+                            
+                            <a href="https://drive.google.com/open?id=0Bw5tQGz11MUuLTdiZnpBRFpSbmM" target="_blank" rel="noreferrer noopener"><!--Link to resource-->
+                                <!--Title of Resource-->
+                                Simple Pressure Hull Tutorial
+                            </a>
+                            
+                        </h3>
+                        <p class="subtitle is-spaced">
+                            <!--From whom its from-->
+                            Steps to create a simple, watertight, pressure hull with two endcaps.
+                        </p>
+                        <div id="category-tags">
+                            <!--Place category tags here-->
+                            
+                            <span class="tag is-dark is-medium">
+                                Mechanical
+                            </span>
+                            
+                            <span class="tag is-dark is-medium">
+                                Design
+                            </span>
+                            
+                            <span class="tag is-dark is-medium">
+                                O-ring
+                            </span>
+                            
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-card">
+                <div class="box">
+                    <div class="content">
+                        <h3 class="title is-3 is-spaced">
+                            
+                            <a href="https://drive.google.com/file/d/0Bw5tQGz11MUuU0hhc2VDOThTSE0/view?usp=sharing" target="_blank" rel="noreferrer noopener"><!--Link to resource-->
+                                <!--Title of Resource-->
+                                Simple Pressure Hull Drawing
+                            </a>
+                            
+                        </h3>
+                        <p class="subtitle is-spaced">
+                            <!--From whom its from-->
+                            Sample design paper for pressure hull, endcap, and O-ring groove design.
+                        </p>
+                        <div id="category-tags">
+                            <!--Place category tags here-->
+                            
+                            <span class="tag is-dark is-medium">
+                                Mechanical
+                            </span>
+                            
+                            <span class="tag is-dark is-medium">
+                                Design
+                            </span>
+                            
+                            <span class="tag is-dark is-medium">
+                                O-ring
+                            </span>
+                            
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-card">
+                <div class="box">
+                    <div class="content">
+                        <h3 class="title is-3 is-spaced">
+                            
+                            <a href="https://www.boltdepot.com/fastener-information/printable-tools/Fastener-Basics.pdf" target="_blank" rel="noreferrer noopener"><!--Link to resource-->
+                                <!--Title of Resource-->
+                                Fastener Basics
+                            </a>
+                            
+                        </h3>
+                        <p class="subtitle is-spaced">
+                            <!--From whom its from-->
+                            Basics of fastener types and features. The standard bolt we use is 10-32 socket head screw for exterior, and 4-40 socket head screw for interior of pressure hulls.
+                        </p>
+                        <div id="category-tags">
+                            <!--Place category tags here-->
+                            
+                            <span class="tag is-dark is-medium">
+                                Mechanical
+                            </span>
+                            
+                            <span class="tag is-dark is-medium">
+                                Design
+                            </span>
+                            
+                            <span class="tag is-dark is-medium">
+                                Fastener
+                            </span>
+                            
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-card">
+                <div class="box">
+                    <div class="content">
+                        <h3 class="title is-3 is-spaced">
+                            
+                            <a href="https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19900009424.pdf" target="_blank" rel="noreferrer noopener"><!--Link to resource-->
+                                <!--Title of Resource-->
+                                NASA Fastener Design Guide
+                            </a>
+                            
+                        </h3>
+                        <p class="subtitle is-spaced">
+                            <!--From whom its from-->
+                            This comprehensive guide from NASA details how to property design fastener components, install them, corrosions, failures, installation torques, and fatigue calculations.
+                        </p>
+                        <div id="category-tags">
+                            <!--Place category tags here-->
+                            
+                            <span class="tag is-dark is-medium">
+                                Mechanical
+                            </span>
+                            
+                            <span class="tag is-dark is-medium">
+                                Design
+                            </span>
+                            
+                            <span class="tag is-dark is-medium">
+                                Fastener
+                            </span>
+                            
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-card">
+                <div class="box">
+                    <div class="content">
+                        <h3 class="title is-3 is-spaced">
+                            
+                            <a href="http://cadeducators.com/download-learn.php?file=NASA.pdf" target="_blank" rel="noreferrer noopener"><!--Link to resource-->
+                                <!--Title of Resource-->
+                                NASA Engineering Drawing Guide
+                            </a>
+                            
+                        </h3>
+                        <p class="subtitle is-spaced">
+                            <!--From whom its from-->
+                            NASA design guide is a comprehensive description for various engineering drawing features.
+                        </p>
+                        <div id="category-tags">
+                            <!--Place category tags here-->
+                            
+                            <span class="tag is-dark is-medium">
+                                Mechanical
+                            </span>
+                            
+                            <span class="tag is-dark is-medium">
+                                Design
+                            </span>
+                            
+                            <span class="tag is-dark is-medium">
+                                Drawing
+                            </span>
+                            
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-card">
+                <div class="box">
+                    <div class="content">
+                        <h3 class="title is-3 is-spaced">
+                            
+                            <a href="https://drive.google.com/open?id=0Bw5tQGz11MUuazRGQzBZeEh0ekk" target="_blank" rel="noreferrer noopener"><!--Link to resource-->
+                                <!--Title of Resource-->
+                                Qubo I Critical Design Review
+                            </a>
+                            
+                        </h3>
+                        <p class="subtitle is-spaced">
+                            <!--From whom its from-->
+                            This is the folder containing R@M 2016 Robot critical design review slides and notes. Mechanical design was a bit outdated, but focus on understanding the structure and proceeding of a design review.
+                        </p>
+                        <div id="category-tags">
+                            <!--Place category tags here-->
+                            
+                            <span class="tag is-dark is-medium">
+                                Mechanical
+                            </span>
+                            
+                            <span class="tag is-dark is-medium">
+                                Design
+                            </span>
+                            
+                            <span class="tag is-dark is-medium">
+                                Design Review
+                            </span>
+                            
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-card">
+                <div class="box">
+                    <div class="content">
+                        <h3 class="title is-3 is-spaced">
+                            
+                            <a href="https://www.mcmaster.com/" target="_blank" rel="noreferrer noopener"><!--Link to resource-->
+                                <!--Title of Resource-->
+                                McMaster Carr
+                            </a>
+                            
+                        </h3>
+                        <p class="subtitle is-spaced">
+                            <!--From whom its from-->
+                            McMaster Carr offers a great selection of industrial components and raw materials. We commonly source acrylic tube, O-rings, fasteners, adhesives, aluminum rods, machining tools, and valves from them. Their main attraction is a large inventory and one-day shipping.
+                        </p>
+                        <div id="category-tags">
+                            <!--Place category tags here-->
+                            
+                            <span class="tag is-dark is-medium">
+                                Mechanical
+                            </span>
+                            
+                            <span class="tag is-dark is-medium">
+                                Vendor
+                            </span>
+                            
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-card">
+                <div class="box">
+                    <div class="content">
+                        <h3 class="title is-3 is-spaced">
+                            
+                            <a href="http://www.bluerobotics.com/store/" target="_blank" rel="noreferrer noopener"><!--Link to resource-->
+                                <!--Title of Resource-->
+                                Blue Robotics
+                            </a>
+                            
+                        </h3>
+                        <p class="subtitle is-spaced">
+                            <!--From whom its from-->
+                            Blue robotics is our main source for thrusters, penetrators, and depth sensor. They offer affordable and reliable marine thrusters, T100 and T200 series. Their watertight, single-use penetrator populates both of our electronic endcaps.
+                        </p>
+                        <div id="category-tags">
+                            <!--Place category tags here-->
+                            
+                            <span class="tag is-dark is-medium">
+                                Mechanical
+                            </span>
+                            
+                            <span class="tag is-dark is-medium">
+                                Vendor
+                            </span>
+                            
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-card">
+                <div class="box">
+                    <div class="content">
+                        <h3 class="title is-3 is-spaced">
+                            
+                            <a href="http://www.eplastics.com/" target="_blank" rel="noreferrer noopener"><!--Link to resource-->
+                                <!--Title of Resource-->
+                                E-Plastics
+                            </a>
+                            
+                        </h3>
+                        <p class="subtitle is-spaced">
+                            <!--From whom its from-->
+                            Sometimes we purchase acrylic tubes from eplastic because they have better selection. They also offer more types of plastics there.
+                        </p>
+                        <div id="category-tags">
+                            <!--Place category tags here-->
+                            
+                            <span class="tag is-dark is-medium">
+                                Mechanical
+                            </span>
+                            
+                            <span class="tag is-dark is-medium">
+                                Vendor
+                            </span>
+                            
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-card">
+                <div class="box">
+                    <div class="content">
+                        <h3 class="title is-3 is-spaced">
+                            
+                            <a href="http://www.teledynemarine.com/impulse" target="_blank" rel="noreferrer noopener"><!--Link to resource-->
+                                <!--Title of Resource-->
+                                Teledyne
+                            </a>
+                            
+                        </h3>
+                        <p class="subtitle is-spaced">
+                            <!--From whom its from-->
+                            Teledyne designs the impulse series, splash-proof, underwater electrical connectors. These “sub-conns” allow us to tether the robot underwater and supply shore power to it. If needed, email them for quotes.
+                        </p>
+                        <div id="category-tags">
+                            <!--Place category tags here-->
+                            
+                            <span class="tag is-dark is-medium">
+                                Mechanical
+                            </span>
+                            
+                            <span class="tag is-dark is-medium">
+                                Vendor
+                            </span>
+                            
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-card">
+                <div class="box">
+                    <div class="content">
+                        <h3 class="title is-3 is-spaced">
+                            
+                            <a href="https://www.amazon.com/" target="_blank" rel="noreferrer noopener"><!--Link to resource-->
+                                <!--Title of Resource-->
+                                Amazon / Small Parts
+                            </a>
+                            
+                        </h3>
+                        <p class="subtitle is-spaced">
+                            <!--From whom its from-->
+                            We use amazon to purchase 3D printer filaments to be used in SSL printers. Sometimes, tools like dial caliper, or COT parts like buoys are bought here.
+                        </p>
+                        <div id="category-tags">
+                            <!--Place category tags here-->
+                            
+                            <span class="tag is-dark is-medium">
+                                Mechanical
+                            </span>
+                            
+                            <span class="tag is-dark is-medium">
+                                Vendor
+                            </span>
+                            
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-card">
+                <div class="box">
+                    <div class="content">
+                        <h3 class="title is-3 is-spaced">
+                            
+                            <a href="http://peiferwelding.com/" target="_blank" rel="noreferrer noopener"><!--Link to resource-->
+                                <!--Title of Resource-->
+                                Peifer Waterjetting
+                            </a>
+                            
+                        </h3>
+                        <p class="subtitle is-spaced">
+                            <!--From whom its from-->
+                            Peifer offers affordable water jetting services. The side panels of current robot were machined at Peifer.
+                        </p>
+                        <div id="category-tags">
+                            <!--Place category tags here-->
+                            
+                            <span class="tag is-dark is-medium">
+                                Mechanical
+                            </span>
+                            
+                            <span class="tag is-dark is-medium">
+                                Services
+                            </span>
+                            
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-card">
+                <div class="box">
+                    <div class="content">
+                        <h3 class="title is-3 is-spaced">
+                            
+                            <a href="https://umd.innovationcenter.makerbot.com/info" target="_blank" rel="noreferrer noopener"><!--Link to resource-->
+                                <!--Title of Resource-->
+                                Makerbot Innovation Center
+                            </a>
+                            
+                        </h3>
+                        <p class="subtitle is-spaced">
+                            <!--From whom its from-->
+                            We use the innovation center for most 3D print prototyping job. They charge $0.10 per gram and has more enough printer to ensure a quick turnout time. This means we can quickly print a placeholder and use it on robot before the actual part is fabricated.
+                        </p>
+                        <div id="category-tags">
+                            <!--Place category tags here-->
+                            
+                            <span class="tag is-dark is-medium">
+                                Mechanical
+                            </span>
+                            
+                            <span class="tag is-dark is-medium">
+                                Services
+                            </span>
+                            
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-card">
+                <div class="box">
+                    <div class="content">
+                        <h3 class="title is-3 is-spaced">
+                            
+                            <a href="http://www.pirls.umd.edu/facilities/#designme" target="_blank" rel="noreferrer noopener"><!--Link to resource-->
+                                <!--Title of Resource-->
+                                ME Machine Shop
+                            </a>
+                            
+                        </h3>
+                        <p class="subtitle is-spaced">
+                            <!--From whom its from-->
+                            ME machine shop, located at the basement of Glenn L Martin building, is the primary placed where we machine components for our robot. It’s a complete machine shop with manual lathe, manual mill, laser cutter, saws, and all tools we need. The shop opens M-F from 8AM – 6PM.
+                        </p>
+                        <div id="category-tags">
+                            <!--Place category tags here-->
+                            
+                            <span class="tag is-dark is-medium">
+                                Mechanical
+                            </span>
+                            
+                            <span class="tag is-dark is-medium">
+                                Services
+                            </span>
+                            
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-card">
+                <div class="box">
+                    <div class="content">
+                        <h3 class="title is-3 is-spaced">
+                            
+                            <a href="https://ssl.umd.edu" target="_blank" rel="noreferrer noopener"><!--Link to resource-->
+                                <!--Title of Resource-->
+                                SSL Machine Shop
+                            </a>
+                            
+                        </h3>
+                        <p class="subtitle is-spaced">
+                            <!--From whom its from-->
+                            Located on the first floor of NBRF, SSL machine shop is a convenient place to machine raw materials. Anyone wish to use the shop must go through an orientation with SSL and ask for permission every time.
+                        </p>
+                        <div id="category-tags">
+                            <!--Place category tags here-->
+                            
+                            <span class="tag is-dark is-medium">
+                                Mechanical
+                            </span>
+                            
+                            <span class="tag is-dark is-medium">
+                                Services
+                            </span>
+                            
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-card">
+                <div class="box">
+                    <div class="content">
+                        <h3 class="title is-3 is-spaced">
+                            
+                            <a href="https://github.com/robotics-at-maryland" target="_blank" rel="noreferrer noopener"><!--Link to resource-->
+                                <!--Title of Resource-->
+                                R@M on Github
+                            </a>
+                            
+                        </h3>
+                        <p class="subtitle is-spaced">
+                            <!--From whom its from-->
+                            Our software is located on Github.
+                        </p>
+                        <div id="category-tags">
+                            <!--Place category tags here-->
+                            
+                            <span class="tag is-dark is-medium">
+                                Software
+                            </span>
+                            
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-card">
+                <div class="box">
+                    <div class="content">
+                        <h3 class="title is-3 is-spaced">
+                            
+                            <a href="https://github.com/robotics-at-maryland/ram_website.git" target="_blank" rel="noreferrer noopener"><!--Link to resource-->
+                                <!--Title of Resource-->
+                                R@M Wiki Page
+                            </a>
+                            
+                        </h3>
+                        <p class="subtitle is-spaced">
+                            <!--From whom its from-->
+                            Our wiki page with resources on how to get started with catkin, ROS, and Git.
+                        </p>
+                        <div id="category-tags">
+                            <!--Place category tags here-->
+                            
+                            <span class="tag is-dark is-medium">
+                                Software
+                            </span>
+                            
+                            <span class="tag is-dark is-medium">
+                                New Members
+                            </span>
+                            
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+</div>
+
+  
+
+    </div>
+
+
+    <!--Footer-->
+    <div id="footer">
+        <!--Footer-->
+<section class="hero is-dark">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <p class="subtitle is-6">
+                Twitter: <a href="//twitter.com/projectqubo" target="_blank" rel="noreferrer noopener">@projectqubo</a>
+            </p>
+            <p class="subtitle is-6">
+                Contact Us: <a href="mailto:team@ram.umd.edu" target="_blank" rel="noreferrer noopener">team@ram.umd.edu</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+    </div>
+
+    <!--Load font awesome icons-->
+    <noscript id="deferred-styles">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </noscript>
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+
+
+</body>
+
+</html>
